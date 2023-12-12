@@ -12,3 +12,12 @@ if (isset($_POST['copy'])) {
     header("Location: /");
     exit;
 }
+
+if(isset($_POST['delete'])) {
+    $copiedImages = glob($imagesDirectory . '/copy_*.{jpg,jpeg,png}', GLOB_BRACE);
+    foreach ($copiedImages as $image) {
+        unlink($image);
+    }
+    header("Location: /");
+    exit;
+}

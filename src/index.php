@@ -28,6 +28,7 @@
 </table>
 <form method="post" action="">
     <input type="submit" name="copy" id="copyButton" value="Copy">
+    <input type="submit" name="delete" id="deleteButton" value="Delete">
 </form>
 </body>
 </html>
